@@ -4,15 +4,15 @@ provider "aws" {
 }
 
 module "mymodule"{
-    source = "../module/createec2"
-    key_name_name = "aws-"
-    name_name = "aws- "
+    source = "../module3/ec2"
+    key_name_name = "aws-jenkins_key"
+    name_name = "aws-new1"
     az_name = "us-east-2b"
 }
 
 module "mymodule"{
-    source = "../module/createec2"
-    key_name_name = "aws-1-"
-    name_name = "aws-1- "
+    source = "../module3/ec2"
+    key_name_name = "aws-1-new"
+    name_name = "aws-1-new"
     az_name = "us-east-2c"
 }
